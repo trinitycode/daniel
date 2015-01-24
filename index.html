@@ -81,9 +81,9 @@ Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
 Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
 
 <h2>Basic addition</h2>
-<input value="1" id="add1">
+<input value="1" id="subtract1">
 plus
-<input value="2" id="add2">
+<input value="2" id="subtract2">
 <input type="button" value="equals" id="addButton">
 <span id="addResult"></span>
 <script>
@@ -92,7 +92,7 @@ $('#addButton').click(function(){
   var add1 = Number($('#add1').val());
   var add2 = Number($('#add2').val());
   // Add the two numbers together and store them as result.
-  var result = add1 + add2;
+  var result = add1 - add2;
   // Show the result.
   $('#addResult').text(result)
 })
