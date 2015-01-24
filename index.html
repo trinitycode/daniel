@@ -84,17 +84,16 @@ Go through and change add to subtract everywhere. Also, change the plus sign to 
 <input value="1" id="subtract1">
 plus
 <input value="2" id="subtract2">
-<input type="button" value="equals" id="addButton">
-<span id="addResult"></span>
+<input type="button" value="equals" id="subtractButton">
+<span id="subtractResult"></span>
 <script>
-$('#addButton').click(function(){
+$('#subtractButton').click(function(){
   // Get numbers from the two boxes.
-  var add1 = Number($('#add1').val());
-  var add2 = Number($('#add2').val());
+  var add1 = Number($('#subtract1').val());
+  var add2 = Number($('#subtract2').val());
   // Add the two numbers together and store them as result.
-  var result = add1 - add2;
-  // Show the result.
-  $('#addResult').text(result)
+  var result = subtract1 - subtract2
+  $('#subtractResult').text(result)
 })
 </script>
 
